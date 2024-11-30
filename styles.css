@@ -1,0 +1,141 @@
+* {    margin: 0;
+    padding: 0;    box-sizing: border-box;
+}
+body {
+    display: flex;    justify-content: center;
+    align-items: center;    height: 100vh;
+    background-color: black;}
+.solar-system {
+    position: relative;    width: 600px;
+    height: 600px;}
+.sun {
+    position: absolute;    top: 50%;
+    left: 50%;    width: 50px;
+    height: 50px;    margin-top: -25px;
+    margin-left: -25px;    background-color: yellow;
+    border-radius: 50%;    box-shadow: 0 0 30px yellow;
+}
+/* Линии орбит */.orbit {
+    position: absolute;    top: 50%;
+    left: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.5);    border-radius: 50%;
+    transform: translate(-50%, -50%);}
+.mercury-orbit { width: 80px; height: 80px; }
+.venus-orbit { width: 120px; height: 120px; }.earth-orbit { width: 160px; height: 160px; }
+.mars-orbit { width: 200px; height: 200px; }.jupiter-orbit { width: 280px; height: 280px; }
+.saturn-orbit { width: 340px; height: 340px; }.uranus-orbit { width: 400px; height: 400px; }
+.neptune-orbit { width: 460px; height: 460px; }
+/* Планеты */.planet {
+    position: absolute;    border-radius: 50%;
+    top: 50%;    left: 50%;
+    transform-origin: 50% -50%; /* Центр вращения */}
+
+.mercury {    width: 10px;
+    height: 10px;    background-color: gray;
+    animation: orbit-mercury 3s linear infinite;    transform: translateX(40px); /* Позиционирование на орбите */
+}
+.venus {    width: 15px;
+    height: 15px;    background-color: orange;
+    animation: orbit-venus 7s linear infinite;    transform: translateX(60px);
+}
+.earth {    width: 20px;
+    height: 20px;    background-color: blue;
+    animation: orbit-earth 10s linear infinite;    transform: translateX(80px);
+}
+.mars {    width: 15px;
+    height: 15px;    background-color: red;
+    animation: orbit-mars 15s linear infinite;    transform: translateX(100px);
+}
+.jupiter {    width: 30px;
+    height: 30px;    background-color: brown;
+    animation: orbit-jupiter 30s linear infinite;    transform: translateX(140px);
+}
+.saturn {
+    width: 25px;    height: 25px;
+    background-color: khaki;    animation: orbit-saturn 40s linear infinite;
+    transform: translateX(170px);}
+.uranus {
+    width: 20px;    height: 20px;
+    background-color: lightblue;    animation: orbit-uranus 50s linear infinite;
+    transform: translateX(200px);}
+.neptune {
+    width: 20px;    height: 20px;
+    background-color: darkblue;    animation: orbit-neptune 60s linear infinite;
+    transform: translateX(230px);}
+/* Анимации для каждой орбиты */
+@keyframes orbit-mercury {    from {
+        transform: rotate(0deg) translateX(40px) rotate(0deg);    }
+    to {        transform: rotate(360deg) translateX(40px) rotate(-360deg);
+    }
+}
+@keyframes orbit-venus {    from {
+        transform: rotate(0deg) translateX(60px) rotate(0deg);    }
+    to {        transform: rotate(360deg) translateX(60px) rotate(-360deg);
+    }}
+@keyframes orbit-earth {
+    from {        transform: rotate(0deg) translateX(80px) rotate(0deg);
+    }    to {
+        transform: rotate(360deg) translateX(80px) rotate(-360deg);    }
+}
+@keyframes orbit-mars {    from {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);    }
+    to {        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }}
+@keyframes orbit-jupiter {
+    from {
+        transform: rotate(0deg) translateX(140px) rotate(0deg);    }
+    to {        transform: rotate(360deg) translateX(140px) rotate(-360deg);
+    }}
+@keyframes orbit-saturn {
+    from {        transform: rotate(0deg) translateX(170px) rotate(0deg);
+    }    to {
+        transform: rotate(360deg) translateX(170px) rotate(-360deg);    }
+}
+@keyframes orbit-uranus {    from {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);    }
+    to {        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }}
+@keyframes orbit-neptune {    from {
+        transform: rotate(0deg) translateX(230px) rotate(0deg);    }
+    to {        transform: rotate(360deg) translateX(230px) rotate(-360deg);
+    }
+}
+header{
+	color:#FF0000;
+	display:flex;
+	justify-content:center;
+	text-align:center;
+}
+.gg2{
+	color:yellow;
+}
+.gg5{
+	height:900px;
+	width:500px;
+	background:#8B00FF;
+	margin-right:400px;
+	text-decoration:none;
+}
+.solar{
+	color:yellow;
+	text-decoration:none;
+}
+.system{
+	color:#666666;
+	font-weight:bold;
+	text-decoration:none;
+}
+.hr1{
+height:8px;
+width:500px;
+background-color:green;	
+}
+.GG{
+	height:57px;
+	width:57px;
+}
+.hr2{
+height:4px;
+width:500px;
+background-color:#FFFFFF;	
+}

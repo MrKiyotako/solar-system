@@ -61,7 +61,10 @@ body {
 .neptune {
     width: 20px;    height: 20px;
     background-color: darkblue;    animation: orbit-neptune 60s linear infinite;
-    transform: translateX(230px);}
+    transform: translateX(230px);
+    color:white;
+    text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00, 0 0 60px #00ff00;
+}
 /* Анимации для каждой орбиты */
 @keyframes orbit-mercury {    from {
         transform: rotate(0deg) translateX(40px) rotate(0deg);    }
